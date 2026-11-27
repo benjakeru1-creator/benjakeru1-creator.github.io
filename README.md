@@ -98,13 +98,30 @@ const COVERS = { tea: 1, ... };   // 每个项目用第几张图做封面
 
 ---
 
-## 5. 部署
+## 5. 部署（已上线）
 
-`site` 文件夹是纯静态资源，直接把 **site 里的内容**（index.html + assets）拖到：
-Vercel / Netlify / GitHub Pages / 腾讯云 COS / 阿里云 OSS 均可。
-体积参考：图片 9.2 MB + 视频 14 MB ≈ 23 MB，首次加载会按需懒加载。
+**线上地址：https://benjakeru1-creator.github.io/**
+仓库：https://github.com/benjakeru1-creator/benjakeru1-creator.github.io （public，GitHub Pages 自动构建）
 
-> 提示：微信内置浏览器对 `file://` 与部分自动播放支持较差，分享给别人时建议用上面的方式二或正式部署。
+### 以后改完怎么更新
+
+改完 `site` 里的文件后，运行根目录的 [更新网站.ps1](更新网站.ps1)（右键 →「使用 PowerShell 运行」），
+脚本会把整个 `site` 重新上传成一个新提交，1～2 分钟后线上自动刷新：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\作品集\更新网站.ps1"
+```
+
+> 脚本读取的是本机 GitHub CLI 保存的登录凭据；如果以后失效，运行 `gh auth login` 重新登录即可。
+> 也可以装个 Git，用常规流程：`git clone` → 改 → `git commit && git push`。
+
+### 换到别的平台
+
+`site` 是纯静态资源，同样可以直接拖到 Vercel / Netlify / 腾讯云 COS / 阿里云 OSS。
+体积参考：图片 9.2 MB + 视频 14 MB ≈ 23 MB，首次加载按需懒加载。
+
+> GitHub Pages 免费版要求仓库 public（你的作品本身就是要被看到的，没问题）。
+> 国内访问 github.io 有时会慢，微信里打开也可能受限；需要更快的话，同样这套文件放到 Vercel 或国内 OSS + CDN 即可。
 
 ---
 
