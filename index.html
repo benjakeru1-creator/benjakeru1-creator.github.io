@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>王成 — 视觉传达设计师 / 作品集 2024—2026</title>
+<meta name="description" content="王成的设计作品集：界面设计、品牌与 IP、包装、平面海报、动态影像与空间投影。">
+<meta name="theme-color" content="#EDE8DF">
+<meta property="og:title" content="王成 — 视觉传达设计师">
+<meta property="og:description" content="以秩序为骨，以心动为魂。视觉传达设计作品集。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/tea-01.webp">
+<link rel="preload" as="image" href="assets/img/guhuo-00.webp">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ───────────────────────── global chrome ───────────────────────── -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scrollline" aria-hidden="true"><i></i></div>
+
+<div class="cursor" aria-hidden="true">
+  <span class="cursor__dot"></span>
+  <span class="cursor__ring"><span class="cursor__label"></span></span>
+</div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__top">
+      <span>王成 / WANG CHENG</span>
+      <span>PORTFOLIO ©2026</span>
+    </div>
+    <div class="loader__mid">
+      <span class="loader__word" data-loader-word>视觉传达</span>
+      <span class="loader__count" data-loader-count>00</span>
+    </div>
+    <div class="loader__bar"><i data-loader-bar></i></div>
+    <div class="loader__bot">
+      <span>界面 · 品牌 · 包装 · 影像 · 空间</span>
+      <span>LOADING ARCHIVE</span>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-cursor="link">
+    <span class="nav__mark">成</span>
+    <span class="nav__brandtxt">
+      <b>王成</b>
+      <i>WANG CHENG</i>
+    </span>
+  </a>
+
+  <nav class="nav__links" aria-label="主导航">
+    <a href="#works" data-nav>作品 <i>Works</i></a>
+    <a href="#reel" data-nav>影像 <i>Motion</i></a>
+    <a href="#archive" data-nav>资料库 <i>Archive</i></a>
+    <a href="#about" data-nav>关于 <i>About</i></a>
+    <a href="#contact" data-nav>联系 <i>Contact</i></a>
+  </nav>
+
+  <div class="nav__right">
+    <span class="nav__time" id="clock">--:--</span>
+    <button class="nav__theme" id="themeBtn" type="button" aria-label="切换昼夜主题" data-cursor="link">
+      <span class="nav__theme-txt" data-theme-label>夜航</span>
+      <span class="nav__theme-dot"></span>
+    </button>
+    <button class="nav__menu" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">
+      <i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="band hero" id="hero">
+    <div class="hero__grid">
+
+      <div class="hero__top">
+        <p class="eyebrow" data-anim="fade">
+          <span>作品集 VOL.02</span>
+          <span>2024 — 2026</span>
+          <span>四川文化产业职业学院 · 广告艺术设计</span>
+        </p>
+      </div>
+
+      <div class="hero__left">
+        <h1 class="hero__name" aria-label="王成">
+          <span class="hero__char" data-anim="char"><i>王</i></span>
+          <span class="hero__char" data-anim="char"><i>成</i></span>
+          <span class="hero__ghost" aria-hidden="true">王成</span>
+        </h1>
+
+        <div class="hero__meta">
+          <span class="hero__rule"></span>
+          <p>
+            <b>WANG CHENG</b>
+            <i>视觉传达设计师 · 界面 / 品牌 / 影像</i>
+          </p>
+        </div>
+
+        <p class="hero__lede" data-anim="fade">
+          以<em>秩序</em>为骨，以<em>心动</em>为魂。<br>
+          在 87 件作品里，练习如何让设计既成立，也被喜欢。
+        </p>
+
+        <div class="hero__actions" data-anim="fade">
+          <a class="btn btn--solid" href="#works" data-cursor="link">
+            <span>查看精选作品</span>
+            <i class="btn__arrow">↘</i>
+          </a>
+          <a class="btn btn--ghost" href="#reel" data-cursor="link">
+            <span class="btn__play"><i></i></span>
+            <span>循环影像</span>
+          </a>
+        </div>
+
+        <p class="hero__avail" data-anim="fade">
+          <span class="hero__avail-dot"></span>
+          现居成都 · 可接受实习与远程合作 · 2027 届
+        </p>
+      </div>
+
+      <div class="hero__right">
+        <div class="cycler" id="cycler" data-cursor="view" role="button" tabindex="0" aria-label="查看当前展示项目">
+          <div class="cycler__frames" data-cycler-frames></div>
+          <div class="cycler__badge"><i></i>AUTO LOOP</div>
+          <div class="cycler__hud">
+            <div class="cycler__hud-l">
+              <span class="cycler__label">NOW SHOWING</span>
+              <span class="cycler__title" data-cycler-title>—</span>
+            </div>
+            <span class="cycler__no" data-cycler-no>01 / 06</span>
+          </div>
+          <div class="cycler__bar"><i data-cycler-bar></i></div>
+        </div>
+        <p class="cycler__cap" data-cycler-cap>点击查看案例 · 每 5 秒自动循环</p>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__statement">
+          <span class="hero__statement-l1">Visual</span>
+          <span class="hero__statement-l2"><i>Communication</i></span>
+          <span class="hero__statement-l3">Design</span>
+        </div>
+        <a class="hero__scroll" href="#profile" data-cursor="link">
+          <span>SCROLL</span><i></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="marquee marquee--hero" aria-hidden="true">
+      <div class="marquee__track">
+        <span>SELECTED WORKS 2024—2026<i>✦</i>界面设计<i>✦</i>品牌与 IP<i>✦</i>包装<i>✦</i>平面海报<i>✦</i>动态影像<i>✦</i>空间投影<i>✦</i></span>
+        <span>SELECTED WORKS 2024—2026<i>✦</i>界面设计<i>✦</i>品牌与 IP<i>✦</i>包装<i>✦</i>平面海报<i>✦</i>动态影像<i>✦</i>空间投影<i>✦</i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── 01 PROFILE ───────────────────────── -->
+  <section class="band band--paper profile" id="profile">
+    <div class="wrap">
+      <div class="secthead">
+        <span class="secthead__no">01</span>
+        <span class="secthead__zh">简介</span>
+        <span class="secthead__en">Profile</span>
+      </div>
+
+      <div class="profile__body">
+        <p class="scrub" data-scrub>
+          <span class="scrub__dim">我是王成，一名在成都的视觉传达设计学生。做界面，也做包装与海报；做品牌，也做动态影像与空间投影。习惯从概念与秩序出发，再把它推到可以被感受的那一步。相信好的设计先解决问题，然后在某个瞬间让人心动。</span>
+          <span class="scrub__fill" aria-hidden="true">我是王成，一名在成都的视觉传达设计学生。做界面，也做包装与海报；做品牌，也做动态影像与空间投影。习惯从概念与秩序出发，再把它推到可以被感受的那一步。相信好的设计先解决问题，然后在某个瞬间让人心动。</span>
+        </p>
+
+        <div class="stats">
+          <div class="stat"><b data-count="19">0</b><span>项目 / Projects</span></div>
+          <div class="stat"><b data-count="6">0</b><span>设计方向 / Fields</span></div>
+          <div class="stat"><b data-count="87">0</b><span>图版与影像 / Assets</span></div>
+          <div class="stat"><b data-count="3">0</b><span>年 / 2024—2026</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── 02 WORKS ───────────────────────── -->
+  <section class="band band--paper works" id="works">
+    <div class="wrap">
+      <div class="secthead">
+        <span class="secthead__no">02</span>
+        <span class="secthead__zh">精选作品</span>
+        <span class="secthead__en">Selected Works</span>
+      </div>
+
+      <div class="works__head">
+        <h2 class="display">
+          <span class="display__line"><i>把想说的话</i></span>
+          <span class="display__line display__line--indent"><i>做成看得见的东西</i></span>
+        </h2>
+        <div class="filters" data-filters="works" aria-label="按方向筛选作品"></div>
+      </div>
+
+      <div class="wlist" data-works></div>
+
+      <p class="works__hint">
+        <span>悬停预览 · 点击进入案例</span>
+        <span data-works-count>19 个项目</span>
+      </p>
+    </div>
+
+    <div class="peek" id="peek" aria-hidden="true">
+      <div class="peek__inner"><img alt="" data-peek-img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span class="peek__tag" data-peek-tag></span></div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── 03 REEL ───────────────────────── -->
+  <section class="band band--ink reel" id="reel">
+    <div class="wrap wrap--wide">
+      <div class="secthead secthead--light">
+        <span class="secthead__no">03</span>
+        <span class="secthead__zh">循环影像</span>
+        <span class="secthead__en">In Motion</span>
+      </div>
+      <div class="reel__head">
+        <h2 class="display display--light">
+          <span class="display__line"><i>让画面</i></span>
+          <span class="display__line display__line--indent"><i>一直流动下去</i></span>
+        </h2>
+        <div class="reel__note">
+          <span class="dot"></span>
+          <p>自动循环播放 · 可拖拽 · 悬停暂停</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel__track" data-reel="a"></div>
+    <div class="reel__track reel__track--rev" data-reel="b"></div>
+
+    <div class="wrap wrap--wide">
+      <div class="reel__foot">
+        <span>ALL MEDIA LOOPED · MUTED BY DEFAULT</span>
+        <span>SCROLL TO KEEP MOVING ↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── 04 ARCHIVE ───────────────────────── -->
+  <section class="band band--paper archive" id="archive">
+    <div class="wrap">
+      <div class="secthead">
+        <span class="secthead__no">04</span>
+        <span class="secthead__zh">资料库</span>
+        <span class="secthead__en">Archive</span>
+      </div>
+
+      <div class="archive__head">
+        <h2 class="display">
+          <span class="display__line"><i>全部图版</i></span>
+          <span class="display__line display__line--indent"><i>与影像</i></span>
+        </h2>
+        <div class="filters" data-filters="archive" aria-label="按方向筛选图版"></div>
+      </div>
+
+      <div class="masonry" data-archive></div>
+      <p class="archive__hint"><span>点击放大 · ← → 切换 · ESC 关闭</span><span data-archive-count></span></p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── 05 ABOUT ───────────────────────── -->
+  <section class="band band--paper about" id="about">
+    <div class="wrap">
+      <div class="secthead">
+        <span class="secthead__no">05</span>
+        <span class="secthead__zh">能力</span>
+        <span class="secthead__en">Capability</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__left">
+          <h2 class="display">
+            <span class="display__line"><i>一个人</i></span>
+            <span class="display__line display__line--indent"><i>也能走完整条链路</i></span>
+          </h2>
+          <p class="about__copy">
+            从概念、草图、建模、版式到动效与落地执行，我习惯把项目一路推到能交付的那一步。
+            界面让我在意逻辑，包装让我在意手感，影像让我在意节奏，空间让我在意身体。
+          </p>
+          <dl class="about__facts">
+            <div><dt>学校</dt><dd>四川文化产业职业学院 · 艺术设计学院</dd></div>
+            <div><dt>专业</dt><dd>广告艺术设计 · 2024 级</dd></div>
+            <div><dt>职务</dt><dd>团支书 · 院青年志愿者协会副部长</dd></div>
+            <div><dt>所在地</dt><dd>成都 · 中国</dd></div>
+          </dl>
+        </div>
+
+        <div class="about__right">
+          <div class="skills" data-skills></div>
+          <div class="tools">
+            <span class="tools__label">TOOLS</span>
+            <div class="tools__marquee">
+              <div class="marquee__track">
+                <span data-tools></span><span data-tools aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ───────────────────────── CONTACT ───────────────────────── -->
+<footer class="band band--ink contact" id="contact">
+  <div class="wrap wrap--wide">
+    <div class="secthead secthead--light">
+      <span class="secthead__no">06</span>
+      <span class="secthead__zh">联系</span>
+      <span class="secthead__en">Contact</span>
+    </div>
+
+    <div class="contact__body">
+      <p class="contact__kicker">如果你也喜欢把秩序做成诗——</p>
+      <h2 class="contact__title">
+        <span>LET'S</span>
+        <span><i>TALK</i><em>·</em></span>
+      </h2>
+
+      <div class="contact__rows">
+        <button class="crow" type="button" data-copy="2923694851@qq.com" data-cursor="copy">
+          <span class="crow__k">邮箱 / Email</span>
+          <span class="crow__v">2923694851@qq.com</span>
+          <span class="crow__a">复制 ↗</span>
+        </button>
+        <button class="crow" type="button" data-copy="18384335129" data-cursor="copy">
+          <span class="crow__k">电话 / Phone</span>
+          <span class="crow__v">+86 183 8433 5129</span>
+          <span class="crow__a">复制 ↗</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="contact__foot">
+      <span>© 2026 王成 WANG CHENG</span>
+      <span>DESIGNED &amp; BUILT IN CHENGDU</span>
+      <a href="#top" data-cursor="link">回到顶部 ↑</a>
+    </div>
+  </div>
+
+  <div class="marquee marquee--foot" aria-hidden="true">
+    <div class="marquee__track">
+      <span>王成<i>·</i>WANG CHENG<i>·</i>视觉传达设计<i>·</i>PORTFOLIO 2026<i>·</i></span>
+      <span>王成<i>·</i>WANG CHENG<i>·</i>视觉传达设计<i>·</i>PORTFOLIO 2026<i>·</i></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ───────────────────────── case study overlay ───────────────────────── -->
+<div class="case" id="case" role="dialog" aria-modal="true" aria-label="项目案例" hidden>
+  <div class="case__scroll" data-case-scroll>
+    <div class="case__bar">
+      <button class="case__back" type="button" data-case-close data-cursor="link">
+        <i>←</i><span>返回索引</span>
+      </button>
+      <div class="case__bar-mid">
+        <span data-case-no>01 / 19</span>
+        <span data-case-cat>—</span>
+      </div>
+      <button class="case__close" type="button" data-case-close aria-label="关闭" data-cursor="link">关闭 ✕</button>
+    </div>
+    <div class="case__content" data-case-content></div>
+  </div>
+</div>
+
+<!-- ───────────────────────── lightbox ───────────────────────── -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="查看大图" hidden>
+  <button class="lb__close" type="button" data-lb-close aria-label="关闭">✕</button>
+  <button class="lb__nav lb__nav--prev" type="button" data-lb-prev aria-label="上一张">←</button>
+  <button class="lb__nav lb__nav--next" type="button" data-lb-next aria-label="下一张">→</button>
+  <figure class="lb__fig">
+    <div class="lb__media" data-lb-media></div>
+    <figcaption class="lb__cap">
+      <span data-lb-cap></span>
+      <span data-lb-no></span>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
